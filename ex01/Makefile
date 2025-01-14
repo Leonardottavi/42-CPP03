@@ -6,7 +6,7 @@
 #    By: lottavi <lottavi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/04 15:11:15 by lottavi           #+#    #+#              #
-#    Updated: 2024/12/04 15:21:06 by lottavi          ###   ########.fr        #
+#    Updated: 2025/01/14 12:51:54 by lottavi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,7 @@ CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = build/serena
-
-SRCS = main.cpp ClapTrap.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
 OBJS = $(SRCS:%.cpp=build/bin/%.o)
 
 all: build_dir $(NAME)
