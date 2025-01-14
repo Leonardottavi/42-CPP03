@@ -6,7 +6,7 @@
 /*   By: lottavi <lottavi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:10:35 by lottavi           #+#    #+#             */
-/*   Updated: 2025/01/14 12:32:44 by lottavi          ###   ########.fr       */
+/*   Updated: 2025/01/14 12:35:01 by lottavi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ int	main()
 
 	int	damage1, damage2, repair1, repair2;
 
-	std::cout << "Enter damage for first attack: ";
+	std::cout << "\033[34mEnter damage for first attack: \033[0m";
 	std::cin >> damage1;
-	std::cout << "Enter repair amount after first attack: ";
+	std::cout << "\033[34mEnter repair amount after first attack: \033[0m";
 	std::cin >> repair1;
-	std::cout << "Enter damage for second attack: ";
+	std::cout << "\033[34mEnter damage for second attack: \033[0m";
 	std::cin >> damage2;
-	std::cout << "Enter repair amount after second attack: ";
+	std::cout << "\033[34mEnter repair amount after second attack: \033[0m";
 	std::cin >> repair2;
 
 	claptrap.attack("target1");
