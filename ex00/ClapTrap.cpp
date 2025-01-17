@@ -6,7 +6,7 @@
 /*   By: lottavi <lottavi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:11:06 by lottavi           #+#    #+#             */
-/*   Updated: 2024/12/04 15:43:43 by lottavi          ###   ########.fr       */
+/*   Updated: 2025/01/17 14:43:32 by lottavi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,4 +61,9 @@ void ClapTrap::beRepaired(unsigned int amount)
 	{
 		std::cout << "ClapTrap " << name << " has no energy or hit points left to be repaired!" << std::endl;
 	}
+}
+
+int ClapTrap::getHitPoints() const
+{
+	return hitPoints;
 }

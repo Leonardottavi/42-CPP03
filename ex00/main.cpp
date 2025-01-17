@@ -6,7 +6,7 @@
 /*   By: lottavi <lottavi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:10:35 by lottavi           #+#    #+#             */
-/*   Updated: 2025/01/14 12:35:01 by lottavi          ###   ########.fr       */
+/*   Updated: 2025/01/17 14:45:32 by lottavi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,27 @@
 
 int	main()
 {
-	ClapTrap	claptrap("CL4P-TP");
+	ClapTrap	claptrap("Robot");
 
-	int	damage1, damage2, repair1, repair2;
+	int	damage, repair;
 
-	std::cout << "\033[34mEnter damage for first attack: \033[0m";
-	std::cin >> damage1;
-	std::cout << "\033[34mEnter repair amount after first attack: \033[0m";
-	std::cin >> repair1;
-	std::cout << "\033[34mEnter damage for second attack: \033[0m";
-	std::cin >> damage2;
-	std::cout << "\033[34mEnter repair amount after second attack: \033[0m";
-	std::cin >> repair2;
+	while (true)
+	{
+		std::cout << "\033[34mEnter damage for attack: \033[0m";
+		std::cin >> damage;
+		std::cout << "\033[34mEnter repair amount: \033[0m";
+		std::cin >> repair;
 
-	claptrap.attack("target1");
-	claptrap.takeDamage(damage1);
-	claptrap.beRepaired(repair1);
-	claptrap.attack("target2");
-	claptrap.takeDamage(damage2);
-	claptrap.beRepaired(repair2);
+		claptrap.attack("target");
+		claptrap.takeDamage(damage);
+		claptrap.beRepaired(repair);
+
+		if (claptrap.getHitPoints() <= 0)
+		{
+			std::cout << "ClapTrap is destroyed!" << std::endl;
+			break;
+		}
+	}
 
 	return 0;
 }

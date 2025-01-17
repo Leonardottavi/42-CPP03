@@ -6,7 +6,7 @@
 /*   By: lottavi <lottavi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 15:11:03 by lottavi           #+#    #+#             */
-/*   Updated: 2024/12/04 15:43:38 by lottavi          ###   ########.fr       */
+/*   Updated: 2025/01/17 14:43:32 by lottavi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ public:
 	void attack(const std::string& target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
+	int getHitPoints() const;
 };
 
 #endif // CLAPTRAP_HPP
